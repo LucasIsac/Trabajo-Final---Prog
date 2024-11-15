@@ -70,11 +70,6 @@ function Navbar() {
               Suscríbete
             </button>
           </form>
-          {/* Agregar los botones de "Hazte una cuenta" e "Inicia sesión" */}
-          <div className="ms-3">
-            <button className="btn btn-outline-primary me-2">Hazte una cuenta</button>
-            <button className="btn btn-primary">Inicia sesión</button>
-          </div>
         </div>
       </div>
     </nav>
