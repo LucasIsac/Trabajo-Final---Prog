@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Carta.css";
 
 const Cartas = () => {
@@ -31,7 +32,7 @@ const Cartas = () => {
             <small>Incluye impuestos y cargos</small>
           </div>
         </div>
-        <button className="availability-button">Ver disponibilidad</button>
+        <NavLink to="/Formulario" className="availability-button">Ver disponibilidad</ NavLink>
       </div>
     </div>
   )

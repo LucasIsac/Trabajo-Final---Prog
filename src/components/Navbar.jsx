@@ -60,16 +60,10 @@ function Navbar() {
               </a>
             </li>
           </ul>
-          <form className="d-flex">
-            <input
-              className="form-control me-2"
-              type="email"
-              placeholder="Correo Electronico"
-            />
-            <button className="btn btn-primary" type="button">
-              Suscríbete
-            </button>
-          </form>
+          <div className="ms-3">
+            <button className="btn btn-outline-primary me-2">Hazte una cuenta</button>
+            <button className="btn btn-primary">Inicia sesión</button>
+          </div>
         </div>
       </div>
     </nav>

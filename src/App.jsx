@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer";
 import NotFound from "./Pages/NotFound";
+import Formulario from "./components/Formulario";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
      
       <Route path="/" element={<HomePage />}/>
       <Route path="/Paquetes" element={<Paquetes />}/>
+      <Route path="/Formulario" element={<Formulario />}/>
       <Route path="/*" element={<NotFound />}/>
       
      </Routes>
