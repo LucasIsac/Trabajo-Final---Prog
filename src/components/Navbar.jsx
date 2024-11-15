@@ -1,12 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import {NavLink} from 'react-router-dom';
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light p-3" id="menu">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <NavLink className="navbar-brand" to="/">
           <span className="fs-5 text-primary fw-bold">Estrella Azul</span>
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -33,9 +33,9 @@ function Navbar() {
                 aria-labelledby="navbarScrollingDropdown"
               >
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink className="dropdown-item" to="/Paquetes">
                     Action
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">

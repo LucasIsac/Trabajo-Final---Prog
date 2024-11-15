@@ -6,7 +6,7 @@ import Paquetes from "./Pages/Paquetes";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer";
-
+import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
@@ -16,8 +16,9 @@ function App() {
      <Navbar />
      <Routes>
      
-      <Route path="/HomePage" element={<HomePage />}/>
+      <Route path="/" element={<HomePage />}/>
       <Route path="/Paquetes" element={<Paquetes />}/>
+      <Route path="/*" element={<NotFound />}/>
       
      </Routes>
      <Footer />
