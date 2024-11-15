@@ -67,9 +67,13 @@ function Navbar() {
               placeholder="Correo Electronico"
             />
             <button className="btn btn-primary" type="button">
-              Suscribete
+              Suscríbete
             </button>
           </form>
+          <div className="ms-3">
+            <button className="btn btn-outline-primary me-2">Hazte una cuenta</button>
+            <button className="btn btn-primary">Inicia sesión</button>
+          </div>
         </div>
       </div>
     </nav>
@@ -77,3 +81,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
