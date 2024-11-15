@@ -1,11 +1,16 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "../components/Carousel.css";
 
-const Home = () => {
+import SearchBar from "../components/SearchBar";
+import ServiciosCarta from "../components/ServiciosCarta"
+import Carousel from "../components/Carousel";
+import Cartas from "../components/Cartas";
+
+const HomePage = () => {
   return (
     <div>
-        <main className="mt-5 pt-5">
-        <Carousel />
-
-        {/* Texto de Inicio */}
+      <main className="mt-5 pt-5">
         <section
           className="d-flex flex-column justify-content-center align-items-center pt-5 text-center w-50 m-auto"
           id="intro"
@@ -23,6 +28,10 @@ const Home = () => {
             estancia perfecta con nosotros!
           </p>
         </section>
+
+        <SearchBar />
+
+        <Carousel />
 
         <div className="contaniner my-5">
           <div className="row align-items-center">
@@ -44,9 +53,11 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        <Cartas />
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default HomePage;
